@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="shortcut icon" href="image/Reino_logo.png" type="image/x-icon"> 
+</head>
+<body>
+    <div class="booking-form-container">
+        <h1>Book Your Stay</h1>
+        <form action="submit_booking.php" method="post" class="booking-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required style="width: 94%;">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required style="width: 94%;">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required style="width: 94%;">
+            </div>
+            <div class="form-group">
+                <label for="checkin">Check-In Date</label>
+                <input type="date" id="checkin" name="checkin" required style="width: 94%;">
+            </div>
+            <div class="form-group">
+                <label for="checkout">Check-Out Date</label>
+                <input type="date" id="checkout" name="checkout" required style="width: 94%;">
+            </div>
+            <div class="form-group">
+                <label for="room-type">Room Type</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="single">Select Room</option>
+                    <option value="single">Single Room</option>
+                    <option value="couple">Couple Room</option>
+                    <option value="family">Family Room</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="massage">Services</label>
+                <select id="massage" name="massage" required>
+                    <option value="yes">Select Your Service</option>
+                    <option value="yes">Accommodation Only</option>
+                    <option value="no">Accommodation + Massage</option>
+                    <option value="yes">Massage Only</option>
+                    <option value="yes">Restaurant & Bar Only</option>
+                    <option value="no">Restaurant & Bar + Massage</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Book Now</button>
+            <br>
+            <button type="submit" class="btn"> <a href="index.html" class="btn" style="text-decoration-line: none;">Back To Website</a></button>
+        </form>
+    </div>
+</body>
+</html>
